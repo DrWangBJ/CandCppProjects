@@ -38,6 +38,10 @@
                 {
                     "from": "gtkC/gdb-launch.json",
                     "to": ".vscode/launch.json"
+                },
+                {
+                    "from": "gtkC/c_cpp_properties.json",
+                    "to": ".vscode/c_cpp_properties.json"
                 }
             ],
             "open": [
