@@ -40,7 +40,7 @@
                     "to": ".vscode/launch.json"
                 },
                 {
-                    "from": "gtkC/c_cpp_properties.json",
+                    "from": "gtkC/properties.json",
                     "to": ".vscode/c_cpp_properties.json"
                 }
             ],
