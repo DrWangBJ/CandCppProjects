@@ -7,7 +7,7 @@
   "templates": [
     {
         "id": "easycppprojects-gtk4-linux",
-        "displayName": "[Gcc/GDB] C Win GTK",
+        "displayName": "[Gcc/GDB] C Windows GTK",
         "description": "Create a GTK project with C structure for GCC with Makefile",
         "language": "C",
         "category": [
