@@ -2,16 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build C++ project",
+            "label": "Build gtk4 project",
             "type": "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "command": "make",
+            "command": "make"
         },
         {
-            "label": "Build & run C++ project",
+            "label": "Build & run gtk4 project",
             "type": "shell",
             "group": {
                 "kind": "test",

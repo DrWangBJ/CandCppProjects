@@ -1,10 +1,51 @@
 {
-  "$schema": "https://raw.githubusercontent.com/FenixTemplates/FenixTemplates/master/fenix-schema.json",
+  "$schema": "https://raw.githubusercontent.com/DrWangBJ/CandCppProjects/main/fenix.json",
   "author": "ACharLuk",
   "repoName": "Easy C++ Projects",
-  "repoUrl": "https://raw.githubusercontent.com/FenixTemplates/EasyCppProjects/master/",
+  "repoUrl": "https://raw.githubusercontent.com/DrWangBJ/CandCppProjects/main/",
   "version": 1.0,
   "templates": [
+    {
+        "id": "easycppprojects-gtk4-linux",
+        "displayName": "[G/GDB] C Win GTK",
+        "description": "Create a GTK project with C structure for GCC with Makefile",
+        "language": "C",
+        "category": [
+            "Programming"
+        ],
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+        "directories": [
+            ".vscode",
+            "bin",
+            "include",
+            "lib",
+            "src"
+        ],
+        "files": {
+            "download": [
+                {
+                    "from": "Ggtk4WIN/main.c",
+                    "to": "src/main.c"
+                },
+                {
+                    "from": "Ggtk4WIN/Makefile",
+                    "to": "Makefile"
+                },
+                {
+                    "from": "Ggtk4WIN/tasks.json",
+                    "to": ".vscode/tasks.json"
+                },
+                {
+                    "from": "Ggtk4WIN/gdb-launch.json",
+                    "to": ".vscode/launch.json"
+                }
+            ],
+            "open": [
+                "src/main.c"
+            ]
+        },
+        "command": "make run"
+      },
     {
       "id": "easycppprojects-gcc-linux",
       "displayName": "[G++/GDB] C++ Linux",

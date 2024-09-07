@@ -2,18 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Debug (gdb)",
-            "type": "cppdbg",
+            "name": "C Debug (gdb)",
+            "type": "cdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bin/main",
-            "preLaunchTask": "Build C++ project",
+            "preLaunchTask": "Build gtk4 project",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
+            "miDebuggerPath": "gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
