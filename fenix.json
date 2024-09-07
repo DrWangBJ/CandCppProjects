@@ -24,19 +24,19 @@
         "files": {
             "download": [
                 {
-                    "from": "cpp/main.cpp",
+                    "from": "gtkC/main.c",
                     "to": "src/main.c"
                 },
                 {
-                    "from": "Ggtk4WIN/Makefile",
+                    "from": "gtkC/Makefile",
                     "to": "Makefile"
                 },
                 {
-                    "from": "Ggtk4WIN/tasks.json",
+                    "from": "gtkC/tasks.json",
                     "to": ".vscode/tasks.json"
                 },
                 {
-                    "from": "Ggtk4WIN/gdb-launch.json",
+                    "from": "gtkC/gdb-launch.json",
                     "to": ".vscode/launch.json"
                 }
             ],
