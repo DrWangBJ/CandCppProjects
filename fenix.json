@@ -24,7 +24,7 @@
         "files": {
             "download": [
                 {
-                    "from": "Ggtk4WIN/main.c",
+                    "from": "cpp/main.cpp",
                     "to": "src/main.c"
                 },
                 {
