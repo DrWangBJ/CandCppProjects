@@ -1,9 +1,6 @@
 # Set the minimum version of cmake required to build this project
 cmake_minimum_required(VERSION 3.30)
 set(projectName "test")
-set(CMAKE_C_COMPILER C:\\msys64\\ucrt64\\bin\\gcc.exe)
-set(CMAKE_CXX_COMPILER C:\\msys64\\ucrt64\\bin\\g++.exe)
-
 # 获取当前文件的完整路径
 get_filename_component(CURRENT_FOLDER_ABSOLUTE ${CMAKE_CURRENT_LIST_FILE} PATH)
 
@@ -14,6 +11,8 @@ get_filename_component(projectName ${CURRENT_FOLDER_ABSOLUTE} NAME)
 message("Current folder name: ${projectName}")
 
 project(${projectName} C)
+# 设置pkg-config的路径，在c:/msys64/usr/bin中也有这个文件，版本不对，如果不设置这个，会找不到头文件
+set(PKG_CONFIG_EXECUTABLE "C:/msys64/ucrt64/bin/pkg-config.exe")
 
 find_package(PkgConfig)
 pkg_search_module(GTK4 REQUIRED gtk4)
@@ -26,9 +25,8 @@ message(STATUS "libs=${GTK4_LIBRARIES}")
 message(STATUS "include=${GTK4_INCLUDE_DIRS}")
 message("Generated with config types: ${CMAKE_CONFIGURATION_TYPES}")
 
-
-
-# 设置Release编译选项,需要发布时，取消下面三行的注释
+# ##设置Release编译选项,需要发布时，取消下面三行的注释
 # set(CMAKE_BUILD_TYPE Release)
 # set(CMAKE_C_FLAGS_RELEASE "-O3 -DNDEBUG -mwindows")
 # set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG -mwindows")
+
