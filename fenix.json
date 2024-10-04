@@ -30,10 +30,6 @@
                 {
                     "from": "gtkC/CMakeLists.txt",
                     "to": "CMakeLists.txt"
-                },
-                {
-                    "from": "gtkC/properties.json",
-                    "to": ".vscode/c_cpp_properties.json"
                 }
             ],
             "open": [
