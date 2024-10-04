@@ -27,6 +27,8 @@ static void activate (GtkApplication *app,
 
     g_signal_connect (button, "clicked", G_CALLBACK (print_hello), NULL);
     g_signal_connect_swapped (button, "clicked", G_CALLBACK (gtk_window_destroy), window);
+            //这里使用g_signal_connect_swapped实际影响的是回调函数的参数顺序，默认回调函数有两个参数
+            //GtkWidget *widget,gpointer data，swap后，回调函数的参数就变成了gpointer data，GtkWidget *widget
 
     gtk_box_append (GTK_BOX (box), button);
 
