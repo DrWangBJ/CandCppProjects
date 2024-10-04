@@ -1,6 +1,9 @@
 # Set the minimum version of cmake required to build this project
 cmake_minimum_required(VERSION 3.30)
 set(projectName "test")
+set(CMAKE_C_COMPILER C:\\msys64\\ucrt64\\bin\\gcc.exe)
+set(CMAKE_CXX_COMPILER C:\\msys64\\ucrt64\\bin\\g++.exe)
+
 # 获取当前文件的完整路径
 get_filename_component(CURRENT_FOLDER_ABSOLUTE ${CMAKE_CURRENT_LIST_FILE} PATH)
 
