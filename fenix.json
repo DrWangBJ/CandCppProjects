@@ -39,8 +39,7 @@
             "open": [
                 "src/main.c"
             ]
-        },
-        "command": "make run"
+        }
       },
     {
       "id": "easycppprojects-gcc-linux",
