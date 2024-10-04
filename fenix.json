@@ -28,7 +28,7 @@
                     "to": "src/main.c"
                 },
                 {
-                    "from": "gtkC/CMakeLists.txt",
+                    "from": "gtkC/CMakeList.txt",
                     "to": "CMakeLists.txt"
                 },
                 {
